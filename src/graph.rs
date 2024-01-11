@@ -4,6 +4,7 @@ pub mod graph {
 
     use crate::node::node::Node;
     use std::collections::HashMap;
+    #[derive(Debug, Clone)]
     pub struct Graph {
         pub nodes: Vec<Node>,
     }
@@ -27,7 +28,7 @@ pub mod graph {
                         continue;
                     }
                     edges_distances.insert(j as u8, distance);
-                    edges_pheromones.insert(j as u8, 1.0);
+                    edges_pheromones.insert(j as u8, 0.5);
                 }
                 nodes.push(Node {
                     id: i as u8,

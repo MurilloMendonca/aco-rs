@@ -1,6 +1,6 @@
 // ant.rs
 pub mod ant {
-    #[derive(Debug)]
+    #[derive(Debug, Clone)]
     pub struct Ant {
         pub path: Vec<u8>,
         pub total_cost: f64,

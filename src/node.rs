@@ -1,5 +1,6 @@
 pub mod node {
     use std::collections::HashMap;
+    #[derive(Debug, Clone)]
     pub struct Node {
         pub id: u8,
         pub edges_distances: HashMap<u8, f64>,
